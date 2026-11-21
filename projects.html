@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10130f">
+  <meta name="description" content="Все сборы ПИВОФОНДА. Найди сбор, который хочешь поддержать.">
+  <title>Все сборы — ПИВОФОНД</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span>🍺</span>
+        ПИВОФОНД
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Главная</a>
+        <a href="projects.html" class="active">Сборы</a>
+        <a href="about.html">О проекте</a>
+        <a href="support.html">Поддержка</a>
+        <a href="create.html" class="nav-button">Создать сбор ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero container">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="pulse"></span>
+          ПОДДЕРЖИВАЙ СВОИХ
+        </div>
+
+        <h1>
+          Все сборы.<br>
+          <span>Одна большая тусовка.</span>
+        </h1>
+
+        <p class="subtitle">
+          Здесь собирают на маленькие радости, большие планы
+          и, конечно, на заслуженное пиво.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="create.html" class="btn btn-primary">
+            Создать свой сбор ↗
+          </a>
+          <a href="#catalog" class="btn btn-outline">
+            Смотреть сборы ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="catalog">
+
+      <div class="section-title">
+        <div>
+          <div class="eyebrow">ВЫБИРАЙ И ПОДДЕРЖИВАЙ</div>
+          <h2>Каталог сборов</h2>
+          <p class="subtitle">
+            Найди интересную историю и стань её частью.
+          </p>
+        </div>
+      </div>
+
+      <div class="catalog-toolbar">
+        <div class="catalog-search">
+          <span>⌕</span>
+          <input
+            type="search"
+            id="projectSearch"
+            placeholder="Поиск по сборам..."
+            aria-label="Поиск по сборам"
+          >
+        </div>
+
+        <div class="catalog-sort">
+          <label for="projectSort">Сортировка</label>
+          <select id="projectSort">
+            <option value="new">Сначала новые</option>
+            <option value="popular">Популярные</option>
+            <option value="progress">По прогрессу</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectsList">
+        <!-- Карточки сборов загрузятся автоматически -->
+      </div>
+
+    </section>
+
+    <section class="container create-banner">
+      <div>
+        <div class="eyebrow">ТВОЯ ОЧЕРЕДЬ</div>
+        <h2>Есть идея для сбора?</h2>
+        <p>Создай страницу, поделись ссылкой и собери свою компанию.</p>
+      </div>
+
+      <a href="create.html" class="btn btn-primary">
+        Создать сбор ↗
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="logo">
+          <span>🍺</span>
+          ПИВОФОНД
+        </a>
+
+        <div class="footer-links">
+          <a href="projects.html">Сборы</a>
+          <a href="about.html">О проекте</a>
+          <a href="rules.html">Правила</a>
+          <a href="support.html">Поддержка</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 ПИВОФОНД</span>
+        <span>Сделано с 🍺 и хорошим настроением</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
